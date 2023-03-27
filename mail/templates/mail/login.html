@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% for message in messages %}
+        <div class="alert alert-success">
+               {{ message }}
+        </div>
+    {% endfor %}
+    <div class="content">
+        <form action="/mail/login/" method="post">
+            {% csrf_token %}
+            <label for="user">user:</label>
+            <input type="text" id="user" name="user" placeholder="user"><br><br>
+
+            <label for="pass">password:</label>
+            <input type="text" id="pass" name="pass" placeholder="password"><br><br>
+
+            <button type="submit">login</button>
+            <button type="submit"><a href="/mail/home/">home page</a></button>
+        </form>
+    </div>
+</body>
+</html>

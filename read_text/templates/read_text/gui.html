@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div class="content">
+        <form action="/read_text/" method="post">
+            {% csrf_token %}
+            <label for="text">read from file.html:</label>
+            <input type="text" id="text" name="text" placeholder="put text here"><br><br>
+
+            <button type="submit">read this</button>
+        </form>
+    </div>
+</body>
+</html>

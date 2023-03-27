@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div class="content">
+        <form>
+            {% csrf_token %}
+            <label>email home page</label><br><br>
+
+            <button type="submit"><a href="/mail/signin/">sign in</a></button>
+            <button type="submit"><a href="/mail/login/">login</a></button>
+        </form>
+    </div>
+</body>
+</html>
